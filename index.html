@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>video.js视频播放器插件</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <link href="video/video-js.css" rel="stylesheet" type="text/css"/>
+        <script src="video/video.js"></script>
+        <script>
+            videojs.options.flash.swf = "video/video-js.swf";
+        </script>
+
+
+    </head>
+    <body>
+        <div style="width:640px;margin:120px auto 0">
+            <video class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+                   poster="video/oceans-clip.png"
+                   data-setup="{}">
+                <source src="video/oceans-clip.mp4" type='video/mp4' />
+                <source src="video/oceans-clip.webm" type='video/webm' />
+                <source src="video/oceans-clip.ogv" type='video/ogg' />
+                <track kind="captions" src="video/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                <track kind="subtitles" src="video/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+            </video>
+        </div>
+
+    </body>
+</html>
